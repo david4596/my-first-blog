@@ -1,0 +1,8 @@
+all information from
+https://tutorial.djangogirls.org/en/deploy/
+
+be sure you see the myvenv/ folder
+source myvenv/bin/activate
+
+runs local server
+python manage.py runserver
