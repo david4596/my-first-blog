@@ -1,8 +1,39 @@
-all information from
-https://tutorial.djangogirls.org/en/deploy/
+# all information from
+# https://tutorial.djangogirls.org/en/deploy/
 
-be sure you see the myvenv/ folder
+# be sure you see the myvenv/ folder
 source myvenv/bin/activate
 
-runs local server
+# runs local server
 python manage.py runserver
+
+# for git:
+# for new git repository on local machine:
+git init
+git config --global user.name "username"
+git config --global user.email "email address"
+# use github username and email
+
+atom .gitignore
+# eg.
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+
+git status
+git add --all
+git commit -m "My Django Girls app, first commit"
+
+git remote add origin https://github.com/<username>/<repositoryname>.git
+git push -u origin master
+
+# at pythonanywhere.com
+# 1. create api token
+# 2. start console via consoles - bash
+pip3.6 install --user pythonanywhere
+pa_autoconfigure_django.py https://github.com/<username>/<repositoryname>.git
+python manage.py createsuperuser
