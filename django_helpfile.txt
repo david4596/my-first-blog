@@ -27,6 +27,8 @@ db.sqlite3
 git status
 git add --all
 git commit -m "My Django Girls app, first commit"
+or
+git commit -a -m "extended django_helpfile.txt"
 
 git remote add origin https://github.com/<username>/<repositoryname>.git
 git push -u origin master
